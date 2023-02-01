@@ -2,8 +2,9 @@ module github.com/yudistrange/scotty
 
 go 1.19
 
+require github.com/apache/beam/sdks/v2 v2.44.0
+
 require (
-	github.com/apache/beam/sdks/v2 v2.44.0 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/uuid v1.3.0 // indirect
