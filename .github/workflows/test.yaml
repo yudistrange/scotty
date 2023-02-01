@@ -1,0 +1,15 @@
+on: [push, pull_request]
+
+name: tests
+
+jobs:
+  test:
+    name: Test Suite
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup golang
+        uses: actions/setup-go@v3
+      - name: Run tests
+        run: go test
