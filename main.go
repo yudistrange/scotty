@@ -1,9 +1,11 @@
 package main
 
-import "fmt"
-import "github.com/yudistrange/scotty/beam"
+import (
+	"fmt"
+	"github.com/yudistrange/scotty/src/wordcount"
+)
 
 func main() {
 	fmt.Println("Hello, world.")
-	beam.Initialize()
+	wordcount.Run()
 }
